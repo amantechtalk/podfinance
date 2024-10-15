@@ -6,7 +6,7 @@ import './desgin.css'
 import { CandlestickController, CandlestickElement, OhlcElement } from 'chartjs-chart-financial';
 Chart.register(...registerables);
 Chart.register(CandlestickController, CandlestickElement, OhlcElement);
-const ExercisesList = () => {
+const FinanceList = () => {
   const [chartData, setChartData] = useState(null);
   const [filter, setFilter] = useState('all');
   const [stockData, setStockData] = useState([]);
@@ -267,4 +267,4 @@ const ExercisesList = () => {
   );
 };
 
-export default ExercisesList;
+export default FinanceList;
