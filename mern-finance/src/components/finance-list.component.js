@@ -191,7 +191,7 @@ const FinanceList = () => {
 
   return (
     <div>
-      <h2>Stock Data Charts</h2>
+      <h4>Double click to select filter</h4>
       <div style={{ marginBottom: 20 }}>
         <button value="month" onClick={handleFilterChange}>This Month</button>
         <button value="week" onClick={handleFilterChange}>This Week</button>

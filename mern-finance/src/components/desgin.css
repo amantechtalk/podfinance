@@ -3,7 +3,7 @@
     align-items: center;
     gap: 4px; /* Space between charts */
     padding: 2px;
-   
+ 
    /* Light background */
     border-radius: 8px;
 
@@ -12,8 +12,7 @@
   .chart-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(580px, 1fr));
-    width: 100%;
-    max-width: 100%; /* Maximum width of the chart */
+   /* Maximum width of the chart */
  
     padding: 2px;
     border-radius: 8px;
@@ -37,11 +36,26 @@
 
   }
   @media (max-width: 488px) {
+    .chart-container {
+      width:80% ;
+      align-items: center;
+      gap: 4px; /* Space between charts */
+      padding: 2px;
+     
+     /* Light background */
+      border-radius: 8px;
+  
+    }
+    
     .chart-wrapper {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-      padding: 20px;
- 
-  }
+     /* Maximum width of the chart */
+   
+      padding: 2px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
 }
   
