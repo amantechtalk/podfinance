@@ -21,7 +21,7 @@ const FinanceList = () => {
 
   const fetchStockData = async () => {
     try {
-      const response = await fetch('http://localhost:5000/stocks');
+      const response = await fetch('http://35.238.242.36:5000/stocks/');
       const data = await response.json();
       setStockData(data);
       prepareChartData(data);
